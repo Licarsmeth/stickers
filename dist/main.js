@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactUs)\n/* harmony export */ });\nfunction contactUs() {\n    const content = document.getElementById(\"content\");\n    \n      // Create and display contact information\n  const contactInfo = document.createElement(\"div\");\n  contactInfo.classList.add('contact-info');\n\n  // Add contact details\n  const email = document.createElement(\"p\");\n  email.textContent = \"Email: licarsmeth@email.com\";\n\n  const phone = document.createElement(\"p\");\n  phone.textContent = \"Phone: +1 (123) 456-7890\";\n\n  // Append contact details to the contact information container\n  contactInfo.appendChild(email);\n  contactInfo.appendChild(phone);\n\n  // Append the contact information to the content\n  content.appendChild(contactInfo);\n}\n  \n\n//# sourceURL=webpack://restaurant/./src/contactUs.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactUs)\n/* harmony export */ });\nfunction contactUs() {\n  const content = document.getElementById(\"content\");\n\n  // Create and display contact information\n  const contactInfo = document.createElement(\"div\");\n  contactInfo.classList.add(\"contact-info\");\n\n  // Add contact details\n  const email = document.createElement(\"p\");\n  email.textContent = \"Email: onlystickers.com.np\";\n\n  const phone = document.createElement(\"p\");\n  phone.textContent = \"Phone: +1 (123) 456-7890\";\n\n  // Append contact details to the contact information container\n  contactInfo.appendChild(email);\n  contactInfo.appendChild(phone);\n\n  // Append the contact information to the content\n  content.appendChild(contactInfo);\n}\n\n\n//# sourceURL=webpack://restaurant/./src/contactUs.js?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _initializePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initializePage */ \"./src/initializePage.js\");\n/* harmony import */ var _menuClick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuClick */ \"./src/menuClick.js\");\n/* harmony import */ var _contactUs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactUs */ \"./src/contactUs.js\");\n\n\n\n\n\nconst content = document.querySelector('#content');\nconst home = document.querySelector(\"#home\");\nconst menu = document.querySelector(\"#menu\");\nconst contact = document.querySelector('#contact');\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  (0,_initializePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\nhome.addEventListener(\"click\", () => {\n  content.textContent = \"\";\n  (0,_initializePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\nmenu.addEventListener(\"click\", () => {\n  content.textContent = \"\";\n  (0,_menuClick__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\ncontact.addEventListener(\"click\", () => {\n    content.textContent = \"\";\n    (0,_contactUs__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  });\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _initializePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initializePage */ \"./src/initializePage.js\");\n/* harmony import */ var _contactUs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactUs */ \"./src/contactUs.js\");\n\n\n\n\nconst content = document.querySelector(\"#content\");\nconst collection = document.querySelector(\"#collection\");\nconst contact = document.querySelector(\"#contact\");\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  (0,_initializePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\ncollection.addEventListener(\"click\", () => {\n  content.textContent = \"\";\n  (0,_initializePage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\ncontact.addEventListener(\"click\", () => {\n  content.textContent = \"\";\n  (0,_contactUs__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -136,27 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initializePage)\n/* harmony export */ });\n/* harmony import */ var _momo_avif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./momo.avif */ \"./src/momo.avif\");\n\n\nfunction initializePage() {\n  //necessary elements\n  const content = document.getElementById(\"content\");\n  const headline = document.createElement(\"h1\");\n  const pic = document.createElement(\"img\");\n  const description = document.createElement(\"div\");\n\n  //add contents and classes\n  headline.textContent = \"Welcome to Momomania!\";\n  pic.setAttribute(\"src\", _momo_avif__WEBPACK_IMPORTED_MODULE_0__);\n  pic.classList.add(\"pic\");\n  description.textContent = \"The best momo in town\";\n  description.classList.add(\"description\");\n\n  //append all to content\n  content.appendChild(headline);\n  content.appendChild(pic);\n  content.appendChild(description);\n}\n\n\n//# sourceURL=webpack://restaurant/./src/initializePage.js?");
-
-/***/ }),
-
-/***/ "./src/menuClick.js":
-/*!**************************!*\
-  !*** ./src/menuClick.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menuClick)\n/* harmony export */ });\nfunction menuClick() {\n  const content = document.getElementById('content');\n\n    // Create and display the food menu\n    const menu = document.createElement(\"div\");\n    menu.classList.add(\"menu\");\n  \n    // Create menu items (e.g., different types of momos)\n    const momoTypes = [\"Chicken Momo\", \"Veg Momo\", \"Buff Momo\", \"Kothe Momo\", \"C-Momo\"];\n    const prices = [\"Rs. 150\", \"Rs. 100\", \"Rs. 120\", \"Rs. 150\", \"Rs. 180\"];\n  \n    for (let i = 0; i < momoTypes.length; i++) {\n      const menuItem = document.createElement(\"div\");\n      menuItem.classList.add(\"menu-item\");\n      menuItem.innerHTML = `<span>${momoTypes[i]}</span><span>${prices[i]}</span>`;\n      menu.appendChild(menuItem);\n    }\n  \n    // Append the menu to the content\n    content.appendChild(menu);\n  }\n  \n\n\n\n//# sourceURL=webpack://restaurant/./src/menuClick.js?");
-
-/***/ }),
-
-/***/ "./src/momo.avif":
-/*!***********************!*\
-  !*** ./src/momo.avif ***!
-  \***********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"dd8a7b18537b112825a3.avif\";\n\n//# sourceURL=webpack://restaurant/./src/momo.avif?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initializePage)\n/* harmony export */ });\nfunction initializePage() {\n  // necessary elements\n  const content = document.getElementById(\"content\");\n  const headline = document.createElement(\"h1\");\n  const pic = document.createElement(\"img\");\n  const description = document.createElement(\"div\");\n\n  // add contents and classes\n  headline.textContent = \"Welcome to Only Stickers!\";\n  pic.classList.add(\"pic\");\n  description.textContent = \"The best stickers in town\";\n  description.classList.add(\"description\");\n\n  // append all to content\n  content.appendChild(headline);\n  content.appendChild(description);\n}\n\n\n//# sourceURL=webpack://restaurant/./src/initializePage.js?");
 
 /***/ })
 
@@ -211,18 +191,6 @@ eval("module.exports = __webpack_require__.p + \"dd8a7b18537b112825a3.avif\";\n\
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -237,29 +205,6 @@ eval("module.exports = __webpack_require__.p + \"dd8a7b18537b112825a3.avif\";\n\
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

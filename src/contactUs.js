@@ -7,7 +7,7 @@ export default function contactUs() {
 
   // Add contact details
   const email = document.createElement("p");
-  email.textContent = "Email: licarsmeth@email.com";
+  email.textContent = "Email: onlystickers.com.np";
 
   const phone = document.createElement("p");
   phone.textContent = "Phone: +1 (123) 456-7890";

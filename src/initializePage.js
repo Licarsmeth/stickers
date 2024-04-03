@@ -1,5 +1,3 @@
-import momo from "./momo.avif";
-
 export default function initializePage() {
   // necessary elements
   const content = document.getElementById("content");
@@ -8,14 +6,12 @@ export default function initializePage() {
   const description = document.createElement("div");
 
   // add contents and classes
-  headline.textContent = "Welcome to Momomania!";
-  pic.setAttribute("src", momo);
+  headline.textContent = "Welcome to Only Stickers!";
   pic.classList.add("pic");
-  description.textContent = "The best momo in town";
+  description.textContent = "The best stickers in town";
   description.classList.add("description");
 
   // append all to content
   content.appendChild(headline);
-  content.appendChild(pic);
   content.appendChild(description);
 }
